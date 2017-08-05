@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 日间模式 -->
+    <style name="AppBaseTheme_Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--color primary-->
+        <item name="colorPrimary">@color/day_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/day_colorPrimaryDark</item>
+        <item name="colorAccent">@color/day_colorPrimary</item>
+
+        <!--text style-->
+        <item name="editTextColor">@color/gray</item>
+        <item name="textColor">@color/day_textColor</item>
+        <item name="press_text_color">@color/day_press_text_color</item>
+        <item name="infoTextColor">@color/day_infoTextColor</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorLink">#0b9a27</item>
+        <item name="android:editTextColor">@color/day_edit_color</item>
+        <item name="android:textColorHint">@color/day_edit_hit_color</item>
+
+        <!--action popup-->
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Dark</item>
+
+        <!--action menu-->
+        <item name="actionMenuTextColor">@color/white</item>
+
+        <!--window style-->
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="layout_bg_normal">@color/day_layout_bg_normal</item>
+        <item name="lineColor">@color/day_line_color</item>
+        <item name="windows_bg">@color/day_windows_bg</item>
+        <item name="sliding_block_bg">@drawable/image_sliding_block</item>
+        <item name="layout_item_bg">@drawable/day_list_item_background</item>
+        <item name="comment_reply_container_bg">@drawable/day_comment_reply_container_bg</item>
+        <item name="message_bg_left">@drawable/chat_from_bg_normal</item>
+        <item name="message_bg_right">@drawable/chat_to_bg_normal</item>
+
+        <!--Icon-->
+        <item name="icon_upvote">@drawable/day_upvote_icon_nor</item>
+        <item name="icon_comment">@drawable/day_ic_comment_selector</item>
+        <item name="icon_forward">@drawable/day_ic_forward_selector</item>
+        <item name="icon_text">@drawable/day_ic_pen_selector</item>
+        <item name="icon_image">@drawable/day_ic_image_selector</item>
+        <item name="icon_video">@drawable/day_ic_video_selector</item>
+
+        <!--recycler-->
+        <item name="attention_text_color">@color/lightblue</item>
+        <item name="recy_msg_layout_bg">@color/day_recy_msg_layout_bg</item>
+        <item name="recy_msg_text_color">@color/day_recy_msg_text_color</item>
+
+        <item name="text_color_selector">@drawable/day_text_selector</item>
+    </style>
+
+    <!-- 夜间模式 -->
+    <style name="AppBaseTheme_Night" parent="@style/Theme.AppCompat.NoActionBar">
+        <!--color primary-->
+        <item name="colorPrimary">@color/night_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/night_colorPrimaryDark</item>
+        <item name="colorAccent">@color/night_colorPrimary</item>
+
+        <!--text style-->
+        <item name="textColor">@color/night_textColor</item>
+        <item name="infoTextColor">@color/night_infoTextColor</item>
+        <item name="android:textColorLink">@color/night_colorPrimary</item>
+        <item name="android:editTextColor">@color/night_edit_color</item>
+        <item name="android:textColorHint">@color/night_edit_hit_color</item>
+
+        <!--window style-->
+        <item name="android:windowBackground">@color/night_windows_bg</item>
+        <item name="layout_bg_normal">@color/night_layout_bg_normal</item>
+        <item name="lineColor">@color/night_line_color</item>
+        <item name="windows_bg">@color/night_windows_bg</item>
+        <item name="sliding_block_bg">@drawable/night_image_sliding_block</item>
+        <item name="layout_item_bg">@drawable/night_list_item_background</item>
+        <item name="comment_reply_container_bg">@drawable/night_comment_reply_container_bg</item>
+        <item name="message_bg_left">@drawable/night_chat_from_bg_normal</item>
+        <item name="message_bg_right">@drawable/chat_to_bg_pressed</item>
+    </style>
+
+    <!-- 全透明的背景 -->
+    <style name="Theme.Transparent" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="App.Theme.Main" parent="AppBaseTheme_Light" />
+
+</resources>

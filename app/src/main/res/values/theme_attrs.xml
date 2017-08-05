@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textColor" format="reference" />
+    <attr name="press_text_color" format="reference"/>
+    <attr name="infoTextColor" format="reference" />
+    <attr name="layout_bg_normal" format="reference" />
+    <attr name="lineColor" format="reference" />
+    <attr name="windows_bg" format="reference" />
+    <attr name="sliding_block_bg" format="reference" />
+    <attr name="layout_item_bg" format="reference" />
+    <attr name="editor_color" format="reference" />
+    <attr name="editor_hit_color" format="reference" />
+    <attr name="comment_reply_container_bg" format="reference" />
+    <attr name="message_bg_left" format="reference" />
+    <attr name="message_bg_right" format="reference" />
+
+    <attr name="icon_upvote" format="reference" />
+    <attr name="icon_comment" format="reference" />
+    <attr name="icon_forward" format="reference" />
+    <attr name="icon_text" format="reference" />
+    <attr name="icon_image" format="reference" />
+    <attr name="icon_video" format="reference" />
+    <attr name="attention_text_color" format="reference" />
+    <attr name="recy_msg_layout_bg" format="reference"/>
+    <attr name="recy_msg_text_color" format="reference"/>
+    <attr name="text_color_selector" format="reference"/>
+
+</resources>

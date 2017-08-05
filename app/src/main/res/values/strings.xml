@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">旅途</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--main-->
+    <string name="main_tab_name_home">首页</string>
+    <string name="main_tab_name_video">视频</string>
+    <string name="main_tab_name_top">微头条</string>
+    <string name="main_tab_name_me">我的</string>
+    <string name="main_tab_name_nologin">未登录</string>
+
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，小屁孩耍脾气啦。<br />我们会帮你教训一下这个小屁孩！</string>
+    <string name="submit_report">打报告去</string>
+
+    <!-- message details -->
+    <string name="main_tab_item_message_detail">资讯详情</string>
+
+    <!-- slide menu -->
+    <string name="menu_team">团队管理</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_about">关于我们</string>
+    <string name="menu_help">帮助中心</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_theme">夜间</string>
+
+    <!--actionbar popup-->
+    <string name="actionbar_popup_scan">扫一扫</string>
+    <string name="actionbar_popup_chat">创建聊天</string>
+    <string name="actionbar_popup_friend">添加好友</string>
+    <string name="actionbar_popup_qrcode">我的二维码/收款</string>
+
+    <!--actionbar-->
+    <string name="actionbar_title_my_friends">关注/粉丝</string>
+
+
+    <!-- qucik option -->
+    <string name="quick_option_text">文字</string>
+    <string name="quick_option_album">相册</string>
+    <string name="quick_option_photo">拍照</string>
+    <string name="quick_option_voice">语音</string>
+    <string name="quick_option_note">便签</string>
+    <string name="quick_option_scan">扫一扫</string>
+    <string name="quick_option_find">找人</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">已加载全部</string>
+
+    <string name="refresh_pull">下拉推荐</string>
+    <string name="refresh_loose">松开推荐</string>
+
+    <!-- Error View -->
+    <string name="error_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="error_view_no_data">暂无内容</string>
+    <string name="error_view_loading">加载中…</string>
+    <string name="error_view_load_error_click_to_refresh">内容加载失败\r\n点击重新加载</string>
+    <string name="error_view_network_error_click_to_refresh">没有可用的网络</string>
+    <string name="tip_network_error">没有可用的网络</string>
+
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+    <string name="copy_success">复制成功</string>
+    <string name="deleting">正在删除…</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_faile">删除失败</string>
+
+    <string name="tweet_public">发布动弹</string>
+    <string name="tweet_hint">今天你动弹了吗？</string>
+    <string name="tweet_publishing">正在发布你的动弹…</string>
+    <string name="tweet_publish_success">动弹发布成功</string>
+    <string name="tweet_publish_faile">发布动弹失败</string>
+    <string name="tweet_play_faile">动弹播放失败</string>
+    <string name="tweet_audio_faile">语音动弹发布失败</string>
+    <string name="cancle_record">取消录音</string>
+    <string name="record_sound_notfound">找不到录音</string>
+    <string name="record_sound_short">时间太短了</string>
+
+    <string name="ok">确定</string>
+    <string name="cancle">取消</string>
+    <string name="clean_cache_mes">是否清空缓存?</string>
+    <string name="draft_tweet_message">是否保存为草稿?</string>
+    <string name="clearwords">是否清空内容?</string>
+    <string name="choose_picture">选择图片</string>
+    <string name="tip_content_empty">内容不能为空</string>
+    <string name="tip_content_too_long">内容太长</string>
+
+
+    <string name="actionbar_title_tweetpub">弹一弹</string>
+
+    <string name="tip_save_image_suc">图片已保存(手机相册-> ltsg_img)</string>
+    <string name="tip_save_image_faile">无法保存图片</string>
+    <string name="tip_load_image_faile">加载图片失败</string>
+
+    <!-- 选择好友 -->
+    <string name="actionbar_title_select_friends">选择&#064;好友</string>
+    <string name="select_friends_search">搜索</string>
+    <string name="select_friends_noresult">无结果</string>
+    <string name="select_friends_empty">暂无好友</string>
+    <string name="select_friends_max_tips">最多只能选%1$d个好友哦</string>
+
+    <string name="down_state">正在下载：%s</string>
+
+    <string name="from_web">网页</string>
+    <string name="from_mobile">手机</string>
+    <string name="from_android">Android</string>
+    <string name="from_iphone">iPhone</string>
+    <string name="from_windows_phone">Windows Phone</string>
+    <string name="from_wechat">微信</string>
+
+    <!--login-->
+    <string name="area_code">+86</string>
+    <string name="input_number">请输入手机号码</string>
+    <string name="input_account">请输入账号</string>
+    <string name="password">密码</string>
+    <string name="input_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="register">新用户注册</string>
+    <string name="find_password">忘记密码</string>
+    <string name="input_verification_code">填写验证码</string>
+    <string name="next">下一步</string>
+
+
+    <string name="unlogin">未登录，请先登录</string>
+    <string name="unlogin_tip">您还未登录\r\n或网络延迟</string>
+    <string name="my_information_unlogin_tips">未登录</string>
+
+    <string name="hint_username">输入账号/邮箱</string>
+    <string name="hint_password">密码</string>
+
+    <string name="tip_please_input_username">请输入用户名</string>
+    <string name="tip_illegal_email">请输入正确的email地址</string>
+    <string name="tip_please_input_password">请输入密码</string>
+    <string name="progress_login">正在登录…</string>
+    <string name="tip_login_error_for_network">对不起,无法登录</string>
+    <string name="tip_no_internet">当前没有可用的网络链接</string>
+
+    <string name="you_have_news_messages">你有%s条最新消息</string>
+    <string name="red_envelopes_count">红包消息(%s) </string>
+    <string name="push_count">平台推送(%s) </string>
+    <string name="order_count">订单信息(%s) </string>
+    <string name="wait_take_picture_count">待拍照(%s)</string>
+    <string name="end_take_picture_count">已拍照(%s)</string>
+    <string name="wait_charge_count">待收费(%s)</string>
+    <string name="deal_success_count">完成(%s)</string>
+    <string name="flee_ticket_count">逃票(%s)</string>
+
+
+    <string name="actionbar_title_search">搜索</string>
+
+    <string name="tip_double_click_exit">再次点击退出云管理</string>
+
+    <!--my information-->
+    <string name="user_info">我的资料</string>
+    <string name="user_score">积分</string>
+    <string name="favorite">收藏</string>
+    <string name="following">关注</string>
+    <string name="follower">粉丝</string>
+    <string name="wallet">钱包</string>
+    <string name="red_envelopes">红包</string>
+    <string name="community">福利社</string>
+    <string name="setting">设置</string>
+
+
+</resources>

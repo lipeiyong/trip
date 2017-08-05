@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.lvtushiguang.trip">
+
+    <!-- 允许访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许查看当前网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许使用wifi-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许读取手机状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--访问一个帐户列表在Accounts Service中-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!--允许程序请求验证从AccountManager-->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!--允许程序管理AccountManager中的账户列表-->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!--Vitamio-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+    1.anyDensity 这个属性指明应用程序是否包含了能够适用于任何屏幕密度的资源
+    2.largeScreens 这个属性用于指示应用程序是否支持较大外形的屏幕
+    3.normalScreens 这个属性用于指示应用程序是否支持普通外形的屏幕
+    4.smallScreens 这个属性用于指定应用程序是否支持较小外形的屏幕
+    5.xlargeScreens 这个属性用于指示应用程序是否支持超大外形的屏幕
+    -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="net.lvtushiguang.trip.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme_Light">
+        <activity
+            android:name="net.lvtushiguang.trip.AppStart"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.lvtushiguang.trip.ui.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="登录"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.lvtushiguang.trip.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <!--指定该Activity能被浏览器安全调用-->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.lvtushiguang.net"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.lvtushiguang.trip.ui.SimpleBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.SearchActivity" />
+
+        <!--支付宝 begin-->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <!--支付宝 end-->
+
+        <!-- 微信支付 begin-->
+        <activity
+            android:name="net.lvtushiguang.trip.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxd930ea5d5a258f4f" />
+            </intent-filter>
+        </activity>
+        <!-- 微信支付 end-->
+
+        <service android:name="net.lvtushiguang.trip.LogUploadService" />
+        <service android:name="net.lvtushiguang.trip.service.DownloadService" />
+
+        <service
+            android:name="net.lvtushiguang.trip.service.NoticeService"
+            android:process=":notice" />
+
+        <receiver android:name="net.lvtushiguang.trip.service.AlarmReceiver">
+            <intent-filter>
+                <action android:name="net.lvtushiguang.parklot.alarmreceiver" />
+            </intent-filter>
+        </receiver>
+
+        <!--设置友盟appid-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57b548fde0f55a512500175e"></meta-data>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+
+        <!-- 必须初始化InitActivity，固定写法 -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity android:name=".ui.TestActivity" />
+
+    </application>
+
+</manifest>

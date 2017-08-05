@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+              classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/oschinaapp/maven/'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//避免在依赖包出新版本时，需要对每个module中的build.gradle文件都进行修改（如appcompat-v7包），使用这种方式即只需一次修改。
+ext {
+    compileSdkVersion = 24
+    buildToolsVersion = "25"
+    applicationId = "net.lvtushiguang.trip"
+    minSdkVersion = 19
+    targetSdkVersion = 24
+    versionCode = 1
+    versionName = "v1.0.0"
+    supportVersion = '25.1.0'
+}

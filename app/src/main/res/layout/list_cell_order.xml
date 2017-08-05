@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:padding="@dimen/space_10"
+              tools:background="@color/yellow">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="13:49:20"/>
+
+        <TextView
+            android:id="@+id/yuars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="17-4-20"/>
+    </LinearLayout>
+
+    <net.lvtushiguang.trip.widget.AvatarView
+        android:id="@+id/iv_avatar"
+        style="@style/user_face_image"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space_10"
+        tools:src="@drawable/money"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="+100"/>
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/orange"
+                tools:text="交易完成"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/orderNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1000000036381617"/>
+    </LinearLayout>
+
+</LinearLayout>

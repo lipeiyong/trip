@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+    android:padding="@dimen/space_6">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/space_60"
+        android:layout_height="wrap_content"
+        android:text="区域"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浙江省杭州市西湖区"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

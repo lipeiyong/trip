@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "authorIcon": "function_icon_manage_assistant",
+    "authorName": "会飞的鱼",
+    "title": "私人定制iphone,就问你怕不怕",
+    "playCount": "1000",
+    "readCount": "999",
+    //点赞
+    "upvote": "20",
+    "commentCount": "160",
+    "sendertime": "2017-06-18 20:30:50",
+    //0=图片 1=视频
+    "type": "0",
+    "image1": "messagelist_home_1",
+    "image2": "messagelist_home_2",
+    "image3": "messagelist_home_3",
+    "image4": "messagelist_home_3",
+    "videoIcon": "messagelist_home_1",
+    "videourl": "http://www.toutiao.com/a6431787154586992897/"
+  },
+  {
+    "id": "2",
+    "authorIcon": "function_icon_manage_assistant",
+    "authorName": "会飞的鱼",
+    "title": "私人定制iphone,就问你怕不怕",
+    "playCount": "1000",
+    "readCount": "999",
+    //点赞
+    "upvote": "20",
+    "commentCount": "160",
+    "sendertime": "2017-06-18 20:30:50",
+    //0=图片 1=视频
+    "type": "0",
+    "image1": "messagelist_home_1",
+    "image2": "messagelist_home_2",
+    "image3": "messagelist_home_3",
+    "image4": "messagelist_home_3",
+    "videoIcon": "messagelist_home_1",
+    "videourl": "http://www.toutiao.com/a6431787154586992897/"
+  },
+  {
+    "id": "3",
+    "authorIcon": "function_icon_manage_assistant",
+    "authorName": "会飞的鱼",
+    "title": "私人定制iphone,就问你怕不怕",
+    "playCount": "1000",
+    "readCount": "999",
+    //点赞
+    "upvote": "20",
+    "commentCount": "160",
+    "sendertime": "2017-06-18 20:30:50",
+    //0=图片 1=视频
+    "type": "0",
+    "image1": "messagelist_home_1",
+    "image2": "messagelist_home_2",
+    "image3": "messagelist_home_3",
+    "image4": "messagelist_home_3",
+    "videoIcon": "messagelist_home_1",
+    "videourl": "http://www.toutiao.com/a6431787154586992897/"
+  },
+  {
+    "id": "4",
+    "authorIcon": "function_icon_manage_assistant",
+    "authorName": "会飞的鱼",
+    "title": "私人定制iphone,就问你怕不怕",
+    "playCount": "1000",
+    "readCount": "999",
+    //点赞
+    "upvote": "20",
+    "commentCount": "160",
+    "sendertime": "2017-06-18 20:30:50",
+    //0=图片 1=视频
+    "type": "0",
+    "image1": "messagelist_home_1",
+    "image2": "messagelist_home_2",
+    "image3": "messagelist_home_3",
+    "image4": "messagelist_home_3",
+    "videoIcon": "messagelist_home_1",
+    "videourl": "http://www.toutiao.com/a6431787154586992897/"
+  }
+]

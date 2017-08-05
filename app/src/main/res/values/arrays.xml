@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_picture">
+        <item>相册</item>
+        <item>相机</item>
+    </string-array>
+
+    <string-array name="friends_viewpage_arrays">
+        <item>关注</item>
+        <item>粉丝</item>
+    </string-array>
+
+    <string-array name="scree_viewpage_arrays">
+        <item>支付宝</item>
+        <item>微信</item>
+    </string-array>
+</resources>

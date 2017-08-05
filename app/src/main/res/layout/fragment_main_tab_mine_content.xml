@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:background="?attr/layout_bg_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fengjing"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_10"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                tools:text="薰衣草"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_14"
+                tools:text="账户余额:80元"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/h_line"/>
+
+    <View
+        style="@style/h_line"
+        android:layout_marginTop="@dimen/space_20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/layout_bg_normal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_alipay"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="@dimen/space_24"
+                android:layout_height="@dimen/space_24"
+                android:src="@drawable/zfb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="支付宝充值"/>
+        </LinearLayout>
+
+        <View style="@style/h_line"/>
+
+        <LinearLayout
+            android:id="@+id/ll_wxpay"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="@dimen/space_24"
+                android:layout_height="@dimen/space_24"
+                android:src="@drawable/wx"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="微信充值1"/>
+        </LinearLayout>
+
+        <View style="@style/h_line"/>
+    </LinearLayout>
+</LinearLayout>

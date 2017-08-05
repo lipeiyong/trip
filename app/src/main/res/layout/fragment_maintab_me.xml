@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/layout_bg_normal">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <net.lvtushiguang.trip.widget.CustomTextView
+                android:id="@+id/ctv_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="?attr/icon_text"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="文字"
+                android:textColor="?attr/textColor"
+                app:drawable_height="@dimen/space_20"
+                app:drawable_location="left"
+                app:drawable_width="@dimen/space_20" />
+
+            <View
+                style="@style/v_line"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <net.lvtushiguang.trip.widget.CustomTextView
+                android:id="@+id/ctv_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="?attr/icon_image"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="图片"
+                android:textColor="?attr/textColor"
+                app:drawable_height="@dimen/space_20"
+                app:drawable_location="left"
+                app:drawable_width="@dimen/space_20" />
+
+            <View
+                style="@style/v_line"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <net.lvtushiguang.trip.widget.CustomTextView
+                android:id="@+id/ctv_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="?attr/icon_video"
+                android:drawablePadding="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:text="视频"
+                android:textColor="?attr/textColor"
+                app:drawable_height="@dimen/space_20"
+                app:drawable_location="left"
+                app:drawable_width="@dimen/space_20" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/h_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/realcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/windowBackground" />
+
+</LinearLayout>
