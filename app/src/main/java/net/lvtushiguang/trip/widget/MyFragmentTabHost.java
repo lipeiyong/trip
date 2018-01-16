@@ -20,7 +20,7 @@ public class MyFragmentTabHost extends FragmentTabHost {
 	public MyFragmentTabHost(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
-	
+
 	@Override
 	public void onTabChanged(String tag) {
 		

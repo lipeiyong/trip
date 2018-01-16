@@ -11,7 +11,7 @@
         android:layout_height="0dip"
         android:layout_weight="1" />
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?attr/windows_bg">
@@ -25,6 +25,7 @@
             android:id="@+id/h_line"
             style="@style/h_line" />
 
-    </FrameLayout>
+    </RelativeLayout>
+
 
 </LinearLayout>

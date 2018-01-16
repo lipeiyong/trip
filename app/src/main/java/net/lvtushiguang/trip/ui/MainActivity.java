@@ -55,16 +55,12 @@ public class MainActivity extends AppCompatActivity implements
         BaseViewInterface {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-
-    private DoubleClickExitHelper mDoubleClickExit;
-
     private static Notice mNotice;
-
     @BindView(android.R.id.tabhost)
     public MyFragmentTabHost mTabHost;
     @BindView(R.id.h_line)
     public View mHLine;
-
+    private DoubleClickExitHelper mDoubleClickExit;
     private BadgeView mBvNotice;
 
     private List<Fragment> list;

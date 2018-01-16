@@ -16,6 +16,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +33,6 @@ import net.lvtushiguang.trip.base.BaseFragment;
 import net.lvtushiguang.trip.bean.SubTab;
 import net.lvtushiguang.trip.fragment.list.HomeListFragment;
 import net.lvtushiguang.trip.interf.OnTabReselectListener;
-import net.lvtushiguang.trip.ui.MainActivity;
 import net.lvtushiguang.trip.ui.SearchActivity;
 import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.TDevice;
@@ -57,7 +57,7 @@ import butterknife.OnTouch;
  */
 public class MainTabHomeFragment extends BaseFragment implements OnTabReselectListener {
 
-    protected static final String TAG = MainTabHomeFragment.class.getSimpleName();
+    private static final String TAG = "MainTabHomeFragment";
 
     @BindView(R.id.search)
     public TextView mSerach;

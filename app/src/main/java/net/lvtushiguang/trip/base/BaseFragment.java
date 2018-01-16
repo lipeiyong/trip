@@ -2,18 +2,16 @@ package net.lvtushiguang.trip.base;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import net.lvtushiguang.trip.AppContext;
+import net.lvtushiguang.trip.R;
 import net.lvtushiguang.trip.interf.BaseFragmentInterface;
 import net.lvtushiguang.trip.ui.dialog.DialogControl;
-import net.lvtushiguang.trip.R;
 import net.lvtushiguang.trip.util.UiUtil;
 
 import butterknife.ButterKnife;
@@ -41,7 +39,8 @@ public class BaseFragment extends Fragment implements View.OnClickListener, Base
      */
     private Bundle args;
     private Unbinder unbinder;
-    private View root;
+    //缓存Fragment view
+    private View rootView;
 
     public AppContext getApplication() {
         return (AppContext) getActivity().getApplication();
@@ -70,7 +69,7 @@ public class BaseFragment extends Fragment implements View.OnClickListener, Base
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(), container, false);
-        root = view;
+        rootView = view;
         //--
         if (getHeadPaddingState()) {
             setRootViewTopPadding(true);
@@ -79,17 +78,18 @@ public class BaseFragment extends Fragment implements View.OnClickListener, Base
         unbinder = ButterKnife.bind(this, view);
         initView(view);
         initData();
+
         return view;
     }
 
     public void setRootViewTopPadding(boolean type) {
         if (type) {
-//            view.setPadding(root.getLeft(), view.getHeight() +UiUtil.getStatusBarHeight(getContext())
+//            view.setPadding(rootView.getLeft(), view.getHeight() +UiUtil.getStatusBarHeight(getContext())
 //                    , view.getRight(), view.getBottom());
 
-            root.setPadding(0, UiUtil.getStatusBarHeight(getContext()), 0, 0);
+            rootView.setPadding(0, UiUtil.getStatusBarHeight(getContext()), 0, 0);
         } else {
-            root.setPadding(0, 0, 0, 0);
+            rootView.setPadding(0, 0, 0, 0);
         }
 
     }

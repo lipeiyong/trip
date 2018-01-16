@@ -1,11 +1,10 @@
 package net.lvtushiguang.trip.ui;
 
 import net.lvtushiguang.trip.R;
-import net.lvtushiguang.trip.fragment.maintab.MainTabDemoFragment;
-import net.lvtushiguang.trip.fragment.maintab.MainTabMeFragment;
-import net.lvtushiguang.trip.fragment.maintab.MainTabVideoFragment;
 import net.lvtushiguang.trip.fragment.maintab.MainTabHomeFragment;
+import net.lvtushiguang.trip.fragment.maintab.MainTabMeFragment;
 import net.lvtushiguang.trip.fragment.maintab.MainTabTopFragment;
+import net.lvtushiguang.trip.fragment.maintab.MainTabVideoFragment;
 
 public enum MainTab {
 
