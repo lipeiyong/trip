@@ -18,7 +18,6 @@ import net.lvtushiguang.trip.bean.TopInfo;
 import net.lvtushiguang.trip.bean.TopInfoList;
 import net.lvtushiguang.trip.fragment.recycler.TopInfoRecyclerFragment;
 import net.lvtushiguang.trip.util.AppOperator;
-import net.oschina.common.utils.StreamUtil;
 
 import org.json.JSONObject;
 
@@ -73,7 +72,7 @@ public class MainTabDemoFragment extends BaseRecyclerFragment<TopInfo> {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            StreamUtil.close(reader);
+//            StreamUtil.close(reader);
         }
     }
 

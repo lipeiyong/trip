@@ -34,7 +34,6 @@ import net.lvtushiguang.trip.ui.empty.EmptyLayout;
 import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.TDevice;
 import net.lvtushiguang.trip.widget.CustomTextView;
-import net.oschina.common.utils.StreamUtil;
 
 import org.json.JSONObject;
 

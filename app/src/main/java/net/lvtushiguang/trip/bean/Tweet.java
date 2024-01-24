@@ -17,7 +17,6 @@ import android.widget.TextView.BufferType;
 import net.lvtushiguang.trip.AppContext;
 import net.lvtushiguang.trip.base.BaseListFragment;
 import net.lvtushiguang.trip.util.UIHelper;
-import net.oschina.common.utils.CollectionUtil;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -269,18 +268,18 @@ public class Tweet extends Entity implements Parcelable {
             return image;
         }
 
-        public static String[] getImagePath(Image[] images) {
-            if (images == null || images.length == 0)
-                return null;
-
-            List<String> paths = new ArrayList<>();
-            for (Image image : images) {
-                if (check(image))
-                    paths.add(image.href);
-            }
-
-            return CollectionUtil.toArray(paths, String.class);
-        }
+//        public static String[] getImagePath(Image[] images) {
+//            if (images == null || images.length == 0)
+//                return null;
+//
+//            List<String> paths = new ArrayList<>();
+//            for (Image image : images) {
+//                if (check(image))
+//                    paths.add(image.href);
+//            }
+//
+//            return CollectionUtil.toArray(paths, String.class);
+//        }
 
         public static boolean check(Image image) {
             return image != null

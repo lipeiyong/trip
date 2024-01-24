@@ -23,7 +23,6 @@ import net.lvtushiguang.trip.bean.SubTab;
 import net.lvtushiguang.trip.interf.OnTabReselectListener;
 import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.UIHelper;
-import net.oschina.common.utils.StreamUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -72,7 +71,7 @@ public class HomeListFragment extends BaseListFragment<Message>
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            StreamUtil.close(reader);
+//            StreamUtil.close(reader);
         }
     }
 

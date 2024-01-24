@@ -12,7 +12,7 @@ import net.lvtushiguang.trip.api.ApiHttpClient;
 import net.lvtushiguang.trip.bean.Constants;
 import net.lvtushiguang.trip.bean.User;
 import net.lvtushiguang.trip.cache.CacheManager;
-import net.oschina.common.helper.SharedPreferencesHelper;
+//import net.oschina.common.helper.SharedPreferencesHelper;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -36,7 +36,7 @@ public final class AccountHelper {
             instances = new AccountHelper(application);
         else {
             // reload from source
-            instances.user = SharedPreferencesHelper.loadFormSource(instances.application, User.class);
+//            instances.user = SharedPreferencesHelper.loadFormSource(instances.application, User.class);
             TLog.d(TAG, "init reload:" + instances.user);
         }
     }
@@ -60,7 +60,7 @@ public final class AccountHelper {
             return new User();
         }
         if (instances.user == null)
-            instances.user = SharedPreferencesHelper.loadFormSource(instances.application, User.class);
+//            instances.user = SharedPreferencesHelper.loadFormSource(instances.application, User.class);
         if (instances.user == null)
             instances.user = new User();
         return instances.user;
@@ -73,12 +73,13 @@ public final class AccountHelper {
         if (TextUtils.isEmpty(user.getCookie()) && instances.user != user)
             user.setCookie(instances.user.getCookie());
         instances.user = user;
-        return SharedPreferencesHelper.save(instances.application, user);
+//        return SharedPreferencesHelper.save(instances.application, user);
+        return false;
     }
 
     private static void clearUserCache() {
         instances.user = null;
-        SharedPreferencesHelper.remove(instances.application, User.class);
+//        SharedPreferencesHelper.remove(instances.application, User.class);
     }
 
     public static boolean login(final User user, Header[] headers) {
@@ -121,14 +122,14 @@ public final class AccountHelper {
             @Override
             public void run() {
                 view.removeCallbacks(this);
-                User user = SharedPreferencesHelper.load(instances.application, User.class);
+//                User user = SharedPreferencesHelper.load(instances.application, User.class);
                 // 判断当前用户信息是否清理成功
-                if (user == null || StringUtils.isEmpty(user.getId())) {
-                    clearAndPostBroadcast(instances.application);
-                    runnable.run();
-                } else {
-                    view.postDelayed(this, 200);
-                }
+//                if (user == null || StringUtils.isEmpty(user.getId())) {
+//                    clearAndPostBroadcast(instances.application);
+//                    runnable.run();
+//                } else {
+//                    view.postDelayed(this, 200);
+//                }
             }
         }, 200);
 

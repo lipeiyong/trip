@@ -226,17 +226,17 @@ public class TabPickerView extends FrameLayout {
             @Override
             public void onBindViewHolder(TabAdapter.ViewHolder holder, int position) {
                 SubTab item = items.get(position);
-                holder.mViewTab.setText(item.getName());
-                if (item.isFixed()) {
-                    holder.mViewTab.setActivated(false);
-                } else {
-                    holder.mViewTab.setActivated(true);
-                }
-                if (mSelectedIndex == position) {
-                    holder.mViewTab.setSelected(true);
-                } else {
-                    holder.mViewTab.setSelected(false);
-                }
+//                holder.mViewTab.setText(item.getName());
+//                if (item.isFixed()) {
+//                    holder.mViewTab.setActivated(false);
+//                } else {
+//                    holder.mViewTab.setActivated(true);
+//                }
+//                if (mSelectedIndex == position) {
+//                    holder.mViewTab.setSelected(true);
+//                } else {
+//                    holder.mViewTab.setSelected(false);
+//                }
                 if (!TextUtils.isEmpty(item.getTag())) {
                     holder.mViewBubble.setText(item.getTag());
                     holder.mViewBubble.setVisibility(VISIBLE);
@@ -325,7 +325,7 @@ public class TabPickerView extends FrameLayout {
 
             @Override
             public void onBindViewHolder(TabAdapter.ViewHolder holder, int position) {
-                holder.mViewTab.setText(items.get(position).getName());
+//                holder.mViewTab.setText(items.get(position).getName());
             }
 
             @Override
@@ -519,28 +519,28 @@ public class TabPickerView extends FrameLayout {
          */
         class ViewHolder extends RecyclerView.ViewHolder {
 
-            TextView mViewTab;
+//            TextView mViewTab;
             TextView mViewBubble;
             ImageView mViewDel;
 
             ViewHolder(View view) {
                 super(view);
-                mViewTab = (TextView) view.findViewById(R.id.tv_content);
+//                mViewTab = (TextView) view.findViewById(R.id.tv_content);
                 mViewBubble = (TextView) view.findViewById(R.id.tv_bubble);
                 mViewDel = (ImageView) view.findViewById(R.id.iv_delete);
 
-                mViewTab.setTextColor(new ColorStateList(new int[][]{
-                                new int[]{-android.R.attr.state_activated},
-                                new int[]{}
-                        }, new int[]{0XFFD43D3D, 0XFF6A6A6A})
-                );
-                mViewTab.setActivated(true);
+//                mViewTab.setTextColor(new ColorStateList(new int[][]{
+//                                new int[]{-android.R.attr.state_activated},
+//                                new int[]{}
+//                        }, new int[]{0XFFD43D3D, 0XFF6A6A6A})
+//                );
+//                mViewTab.setActivated(true);
 
-                mViewTab.setTag(this);
+//                mViewTab.setTag(this);
                 mViewDel.setTag(this);
                 mViewDel.setOnClickListener(getDeleteItemListener());
-                mViewTab.setOnClickListener(getClickTabItemListener());
-                mViewTab.setOnTouchListener(getTouchTabItemListener());
+//                mViewTab.setOnClickListener(getClickTabItemListener());
+//                mViewTab.setOnTouchListener(getTouchTabItemListener());
             }
         }
 
@@ -616,7 +616,7 @@ public class TabPickerView extends FrameLayout {
             public void onSelectedChanged(final RecyclerView.ViewHolder viewHolder, int actionState) {
                 super.onSelectedChanged(viewHolder, actionState);
                 if (viewHolder == null) return;
-                ((ViewHolder) viewHolder).mViewTab.setSelected(true);
+//                ((ViewHolder) viewHolder).mViewTab.setSelected(true);
                 if (isEditMode()) return;
                 final int position = viewHolder.getAdapterPosition();
 
@@ -643,7 +643,7 @@ public class TabPickerView extends FrameLayout {
             public void clearView(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
                 super.clearView(recyclerView, viewHolder);
                 if (mSelectedIndex == viewHolder.getAdapterPosition()) return;
-                ((ViewHolder) viewHolder).mViewTab.setSelected(false);
+//                ((ViewHolder) viewHolder).mViewTab.setSelected(false);
             }
         }
 

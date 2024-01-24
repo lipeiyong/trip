@@ -1,4 +1,6 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -30,13 +32,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '26.0.2'
 }
 
 dependencies {
     //TabLayout
     compile "com.android.support:design:$rootProject.ext.supportVersion"
-    compile 'net.oschina.common:common:0.1.6'
+//    compile 'net.oschina.common:common:0.1.6'
     // 编译libs目录下的所有jar包
     compile fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'

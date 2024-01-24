@@ -5,19 +5,19 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <net.oschina.common.widget.AdjustTextView
-        android:id="@+id/tv_content"
-        android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_margin="6dp"
-        android:background="@drawable/selector_dynamic_tab"
-        android:clickable="true"
-        android:gravity="center"
-        android:lines="1"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:textSize="13sp"
-        app:oscMinTextSize="4sp" />
+<!--    <net.oschina.common.widget.AdjustTextView-->
+<!--        android:id="@+id/tv_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:background="@drawable/selector_dynamic_tab"-->
+<!--        android:clickable="true"-->
+<!--        android:gravity="center"-->
+<!--        android:lines="1"-->
+<!--        android:paddingLeft="4dp"-->
+<!--        android:paddingRight="4dp"-->
+<!--        android:textSize="13sp"-->
+<!--        app:oscMinTextSize="4sp" />-->
 
     <TextView
         android:id="@+id/tv_bubble"

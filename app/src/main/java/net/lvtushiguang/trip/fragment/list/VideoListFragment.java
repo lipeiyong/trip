@@ -33,7 +33,6 @@ import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.SizeUtils;
 import net.lvtushiguang.trip.widget.AvatarView;
 import net.lvtushiguang.trip.widget.VideoPlayView;
-import net.oschina.common.utils.StreamUtil;
 
 import org.json.JSONObject;
 
@@ -103,7 +102,7 @@ public class VideoListFragment extends BaseListFragment<Video> implements OnTabR
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            StreamUtil.close(reader);
+//            StreamUtil.close(reader);
         }
     }
 

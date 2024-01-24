@@ -37,7 +37,6 @@ import net.lvtushiguang.trip.ui.SearchActivity;
 import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.TDevice;
 import net.lvtushiguang.trip.widget.TabPickerView;
-import net.oschina.common.utils.StreamUtil;
 
 import java.io.File;
 import java.io.FileReader;
@@ -93,12 +92,27 @@ public class MainTabHomeFragment extends BaseFragment implements OnTabReselectLi
                         List<SubTab> list = AppOperator.getGson().fromJson(reader,
                                 new TypeToken<ArrayList<SubTab>>() {
                                 }.getType());
+                        //TODO
+                        list = new ArrayList<>(1);
+                        SubTab subTab = new SubTab();
+                        subTab.setToken("d6112fa662bc4bf21084670a857fbd20");
+                        subTab.setName("推荐");
+                        subTab.setFixed(true);
+                        subTab.setNeedLogin(false);
+                        subTab.setTag("");
+                        subTab.setType(6);
+                        subTab.setSubtype(1);
+                        subTab.setOrder(1);
+                        subTab.setHref("https://www.oschina.net/action/apiv2/sub_list?token=d6112fa662bc4bf21084670a857fbd20");
+                        list.add(subTab);
+
+
                         Log.e("TAG", list.toString());
                         return list;
                     } catch (IOException e) {
                         e.printStackTrace();
                     } finally {
-                        StreamUtil.close(reader);
+//                        StreamUtil.close(reader);
                     }
                     return null;
                 }
@@ -116,7 +130,7 @@ public class MainTabHomeFragment extends BaseFragment implements OnTabReselectLi
                     } catch (IOException e) {
                         e.printStackTrace();
                     } finally {
-                        StreamUtil.close(reader);
+//                        StreamUtil.close(reader);
                     }
                     return null;
                 }
@@ -134,7 +148,7 @@ public class MainTabHomeFragment extends BaseFragment implements OnTabReselectLi
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
-                        StreamUtil.close(writer);
+//                        StreamUtil.close(writer);
                     }
                 }
             };
@@ -197,7 +211,7 @@ public class MainTabHomeFragment extends BaseFragment implements OnTabReselectLi
                         } catch (Exception e) {
                             e.printStackTrace();
                         } finally {
-                            StreamUtil.close(writer);
+//                            StreamUtil.close(writer);
                         }
                     }
                 });
