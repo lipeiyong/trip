@@ -1,7 +1,7 @@
 package net.lvtushiguang.trip.widget;
 
 import android.content.Context;
-import android.support.v4.app.FragmentTabHost;
+import androidx.fragment.app.FragmentTabHost;
 import android.util.AttributeSet;
 
 /**

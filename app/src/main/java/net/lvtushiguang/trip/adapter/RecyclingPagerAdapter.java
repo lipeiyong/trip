@@ -1,6 +1,6 @@
 package net.lvtushiguang.trip.adapter;
 
-import android.support.v4.view.PagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -113,7 +113,7 @@ public abstract class RecyclingPagerAdapter extends PagerAdapter {
      *            that this View is always of the right type (see
      *            {@link #getViewTypeCount()} and {@link #getItemViewType(int)}
      *            ).
-     * @param parent
+     * @param position
      *            The parent that this view will eventually be attached to
      * @return A View corresponding to the data at the specified position.
      */

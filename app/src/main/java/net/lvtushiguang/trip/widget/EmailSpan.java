@@ -1,7 +1,7 @@
 package net.lvtushiguang.trip.widget;
 
 import android.app.Activity;
-import android.support.v4.app.ShareCompat;
+import androidx.core.app.ShareCompat;
 import android.text.style.ClickableSpan;
 import android.view.View;
 

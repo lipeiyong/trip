@@ -1,18 +1,19 @@
 package net.lvtushiguang.trip.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.PagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.PagerAdapter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
  * 我们不希望维持Fragment的状态，因为可能活动的Tab会很多，所以既不能用
- * {@link android.support.v4.app.FragmentPagerAdapter}, 因为它通过{@link FragmentTransaction#add(Fragment, String)},
+ * {@link androidx.fragment.app.FragmentPagerAdapter}, 因为它通过{@link FragmentTransaction#add(Fragment, String)},
  * {@link FragmentTransaction#attach(Fragment)}和{@link FragmentTransaction#detach(Fragment)}的方式，
- * 状态由{@link Fragment}自己维护，也不能用{@link android.support.v4.app.FragmentStatePagerAdapter}, 因为
+ * 状态由{@link Fragment}自己维护，也不能用{@link FragmentStatePagerAdapter}, 因为
  * 它通过{@link FragmentTransaction#add(Fragment, String)}和{@link FragmentTransaction#remove(Fragment)}
  * 的方式，有两个集合保存加入的{@link Fragment}以及它们的状态
  * <p>

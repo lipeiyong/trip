@@ -2,8 +2,8 @@ package net.lvtushiguang.trip.ui;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import net.lvtushiguang.trip.R;
-import net.lvtushiguang.trip.widget.VideoPlayView;
 
 import java.util.ArrayList;
 import java.util.List;

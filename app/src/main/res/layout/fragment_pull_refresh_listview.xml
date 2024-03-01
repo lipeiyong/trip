@@ -6,7 +6,7 @@
 
     <!-- google 官方下拉刷新 -->
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swiperefreshlayout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -21,7 +21,7 @@
             android:dividerHeight="0dp"
             android:scrollbars="none"
             android:scrollingCache="true" />
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     
     <net.lvtushiguang.trip.ui.empty.EmptyLayout
         android:id="@+id/error_layout"

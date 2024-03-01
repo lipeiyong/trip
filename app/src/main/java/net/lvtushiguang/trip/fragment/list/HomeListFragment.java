@@ -1,16 +1,12 @@
 package net.lvtushiguang.trip.fragment.list;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
-import com.google.gson.JsonParser;
 import com.google.gson.reflect.TypeToken;
 
 import net.lvtushiguang.trip.AppContext;
@@ -19,16 +15,12 @@ import net.lvtushiguang.trip.base.BaseListFragment;
 import net.lvtushiguang.trip.bean.ListEntity;
 import net.lvtushiguang.trip.bean.Message;
 import net.lvtushiguang.trip.bean.MessageList;
-import net.lvtushiguang.trip.bean.SubTab;
 import net.lvtushiguang.trip.interf.OnTabReselectListener;
 import net.lvtushiguang.trip.util.AppOperator;
 import net.lvtushiguang.trip.util.UIHelper;
 
-import org.json.JSONException;
 import org.json.JSONObject;
-import org.json.JSONStringer;
 
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.ArrayList;

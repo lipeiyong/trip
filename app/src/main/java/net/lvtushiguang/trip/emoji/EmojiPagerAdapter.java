@@ -15,8 +15,8 @@
  */
 package net.lvtushiguang.trip.emoji;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 /**
  * 表情页适配器（FragmentPagerAdapter的好处是fragment常驻内存，对于要求效率而页卡很少的表情控件最合适）

@@ -4,15 +4,14 @@ plugins {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         multiDexEnabled true
         applicationId rootProject.ext.applicationId
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode rootProject.ext.versionCode
-        versionName rootProject.ext.versionName
+        versionCode 1
+        versionName "24.03010"
     }
 
     // 移除lint检查的error
@@ -36,28 +35,28 @@ android {
 
 dependencies {
     //TabLayout
-    compile "com.android.support:design:$rootProject.ext.supportVersion"
+    implementation 'com.google.android.material:material:1.0.0'
 //    compile 'net.oschina.common:common:0.1.6'
     // 编译libs目录下的所有jar包
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.jakewharton:butterknife:8.0.1'
-    compile 'com.loopj.android:android-async-http:1.4.9'
-    compile 'org.kymjs.kjframe:kjframe:2.6'
-    compile 'com.joanzapata.android:android-iconify:1.0.9'
-    compile 'com.makeramen:roundedimageview:2.1.1'
-    compile 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.2.7'
-    compile 'com.alibaba:fastjson:1.2.23'
-    compile 'com.google.code.gson:gson:2.8.0'
-    compile 'com.android.support:appcompat-v7:24.1.0'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.jakewharton:butterknife:8.0.1'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'org.kymjs.kjframe:kjframe:2.6'
+    implementation 'com.joanzapata.android:android-iconify:1.0.9'
+    implementation 'com.makeramen:roundedimageview:2.1.1'
+    implementation 'com.networkbench.newlens.agent.android:nbs.newlens.agent:2.2.7'
+    implementation 'com.alibaba:fastjson:1.2.23'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
     //recycleView header
-    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
-    compile project(':springview')
+    implementation 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    implementation project(':springview')
     //lamda
-    compile 'android.arch.lifecycle:extensions:1.0.0-alpha1'
-    compile 'android.arch.persistence.room:runtime:1.0.0-alpha1'
-    annotationProcessor "android.arch.lifecycle:compiler:1.0.0-alpha1"
-    annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
 }

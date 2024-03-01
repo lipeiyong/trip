@@ -3,7 +3,6 @@ package net.lvtushiguang.trip.wxapi;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.LocalBroadcastManager;
 
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
@@ -14,7 +13,6 @@ import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 import net.lvtushiguang.trip.AppConfig;
 import net.lvtushiguang.trip.R;
-import net.lvtushiguang.trip.fragment.maintab.MainTabMeFragment;
 
 public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 

@@ -1,47 +1,21 @@
 package net.lvtushiguang.trip.fragment.maintab;
 
-import android.content.Context;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.IconTextView;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.google.gson.reflect.TypeToken;
-
-import net.lvtushiguang.trip.AppContext;
 import net.lvtushiguang.trip.R;
-import net.lvtushiguang.trip.adapter.RecyclerAdapter;
 import net.lvtushiguang.trip.base.BaseFragment;
-import net.lvtushiguang.trip.base.ListBaseAdapter;
-import net.lvtushiguang.trip.bean.Entity;
-import net.lvtushiguang.trip.bean.ListEntity;
-import net.lvtushiguang.trip.bean.TopInfo;
-import net.lvtushiguang.trip.bean.TopInfoList;
-import net.lvtushiguang.trip.cache.CacheManager;
-import net.lvtushiguang.trip.ui.empty.EmptyLayout;
-import net.lvtushiguang.trip.util.AppOperator;
-import net.lvtushiguang.trip.util.TDevice;
 import net.lvtushiguang.trip.widget.CustomTextView;
 
-import org.json.JSONObject;
-
-import java.io.InputStreamReader;
-import java.io.Serializable;
-import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;

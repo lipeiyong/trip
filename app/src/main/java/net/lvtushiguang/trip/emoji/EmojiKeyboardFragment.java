@@ -2,9 +2,9 @@ package net.lvtushiguang.trip.emoji;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -83,7 +83,7 @@ public class EmojiKeyboardFragment extends Fragment implements
     /**
      * 底部栏点击事件监听器
      * 
-     * @param indexfff
+     * @param index
      * @return
      */
     private OnClickListener getBottomBarClickListener(final int index) {

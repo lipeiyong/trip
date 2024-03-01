@@ -1,45 +1,22 @@
 package net.lvtushiguang.trip.fragment;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.Log;
-import android.view.LayoutInflater;
+import androidx.annotation.Nullable;
+
 import android.view.View;
-import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.loopj.android.http.JsonHttpResponseHandler;
-
-import net.lvtushiguang.trip.AppContext;
 import net.lvtushiguang.trip.R;
 import net.lvtushiguang.trip.adapter.MessageDetailAdapter;
-import net.lvtushiguang.trip.api.remote.LvTuShiGuangApi;
 import net.lvtushiguang.trip.base.BaseFragment;
 import net.lvtushiguang.trip.bean.Message;
 import net.lvtushiguang.trip.ui.empty.EmptyLayout;
-import net.lvtushiguang.trip.util.StringUtils;
-import net.lvtushiguang.trip.widget.AvatarView;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
-import butterknife.Unbinder;
-import cz.msebera.android.httpclient.Header;
 
 /**
  * Created by 薰衣草 on 2017/2/20.

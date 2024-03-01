@@ -26,12 +26,10 @@ task clean(type: Delete) {
 
 //避免在依赖包出新版本时，需要对每个module中的build.gradle文件都进行修改（如appcompat-v7包），使用这种方式即只需一次修改。
 ext {
-    compileSdkVersion = 24
-    buildToolsVersion = "25"
+    compileSdkVersion = 30
     applicationId = "net.lvtushiguang.trip"
     minSdkVersion = 19
-    targetSdkVersion = 24
+    targetSdkVersion = 30
     versionCode = 1
-    versionName = "v1.0.0"
-    supportVersion = '25.3.1'
+    versionName = "1.0.0"
 }

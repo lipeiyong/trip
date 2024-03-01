@@ -1,9 +1,9 @@
 package com.liaoinstan.springview.container;
 
 import android.content.Context;
-import android.graphics.drawable.RotateDrawable;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
+
+import androidx.core.content.ContextCompat;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.liaoinstan.springview.R;
-import com.liaoinstan.springview.widget.SpringView;
 
 /**
  * Created by Administrator on 2016/3/21.
